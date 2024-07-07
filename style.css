@@ -1,3 +1,95 @@
-body{
-background: lightcyan;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body, html{
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* H1,H2,H3 Sizing & Weight */
+h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+h4{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Banner & Wrapper */
+.wrapper{
+    width: 960;
+    margin: 0 auto;
+}
+.hero-banner{
+    background: #af7ac5;
+    min-height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+}.hero-banner h1{
+    color: white;
+    margin: 25px 0;
+}
+.hero-banner h3{
+    color: white;
+    margin: 0 0 35px;
+}
+.hero-banner h4,
+.hero-banner h4 a{
+    color: white;
+    margin: 0;
+}
+
+/* Character positioning */
+.character1{
+    background: url(img/friend1.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 303px;
+    height: 365px;
+    position: absolute; top: 117px; right: 50px;
+    rotate: -10deg;
+
+}
+.character2{
+    background: url(img/friend2.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 303px;
+    height: 365px;
+    position: absolute; top: 260px; right: 1px;
+}
+.character3{
+    background: url(img/friend3.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 303px;
+    height: 365px;
+    position: absolute; top: 260px; right: 180px;
+    rotate: 10deg;
+}
+
+/* Buttons */
+a.cta,
+button.cta{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: 007FFF;
+    display: inline-block;
+    outline: 10px solid rgba(106, 0, 255, 0.3);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #af7ac5;
+}
+a.cta.alt,
+button.cta.alt{
+    background-color: #FFD400;
+    outline-color: rgba(0,0,0,.15);
+    color: #111111;
 }
