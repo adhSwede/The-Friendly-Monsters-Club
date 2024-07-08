@@ -5,7 +5,6 @@ body, html{
     padding: 0;
     margin: 0;
 }
-
 /* Typography Styling*/
 h1{
     font-weight: 700;
@@ -33,7 +32,7 @@ p{
 /* Banner & Wrapper */
 .wrapper{
     margin: 0 auto;
-    width: 960;
+    width: 960px;
 }
 .hero-banner{
     background: #af7ac5;
@@ -65,7 +64,6 @@ p{
     height: 365px;
     position: absolute; top: 117px; right: 50px;
     rotate: -10deg;
-
 }
 .character2{
     background: url(img/friend2.png) no-repeat 0 0;
@@ -103,13 +101,22 @@ button.cta.alt{
     outline-color: rgba(0,0,0,.15);
     color: #111111;
 }
+a.cta:hover,
+button.cta:hover{
+    opacity: .7;
+}
+a.cta:active,
+button.cta:active{
+    opacity: .5;
+}
 
-/* Nav. Bar */
+/* Nav */
 nav{
     height: 100px;
     background-color: white;
     box-shadow: 0 5px 8px rgba(0,0,0,.2);
     position: sticky; top: 0;
+    z-index: 1;
 }
 nav .logo{
     display: block;
@@ -152,7 +159,6 @@ nav ul li a{
 .more-info p{
     margin: 18px 0 35px;
 }
-
 .highlight{
     background-color: #af7ac5;
     color: #00ff4c;
@@ -162,12 +168,80 @@ nav ul li a{
     font-weight: bold;
 }
 
+/* Story List */
+.sep{
+    height: 10px;
+    width: 470px;
+    background-color: #111111;
+    margin: 70px auto;
+}
+.story h3{
+    font-size: 40px;
+    font-weight: bold;
+}
 
+.nb-list{
+    width: 470px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: #EDEDED;
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 0 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.grey{background-color: rgba(0,0,0,.1);}
+.nb-list li.yellow{
+    background-color: #FFD400;
+    color: #111111;}
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.pink{background-color: #FFADF9;}
+.nb-list li.salmon{background-color: #FA8072;}
 
-/* <div class="more-info" id="more-info">
-<h2>Join our club!</h2>
-<p>
-Every week we have a <span class="highlight">Party.</span>. If you want in on that, then join our club.
-There will be cake and soft drinks! Sometimes we have movie nights and popcorn!</p>
-<button class="cta">Sign me up!</button>
-</div> */
+.nb-list li.dragging{
+    position: absolute; 
+    top: 100px;
+    left: 70px;
+    right: -30px;
+    rotate: 6deg;
+    box-shadow: 0 2px 14px rgba(0,0,0,.3);
+}
+.nb-list li.dragging:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 60px;
+    background: url(img/draghand.png) no-repeat 0 0;
+    background-size: 100%;
+    bottom: -33px;
+    left: 60%;
+    rotate: -10deg;
+}
+
+/* Footer */
+.club-img{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    text-align: center;
+    color: rgba(0,0,0,.4);
+    font-size: 20px;
+    margin: 85px 0 45px;
+    font-weight: bold;
+}
+footer a{
+    color: rgba(0,0,0,.4);
+}
