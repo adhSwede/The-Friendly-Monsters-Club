@@ -30,7 +30,7 @@
     <nav>
         <a href="#" class="logo">The Club</a>
         <ul>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="javascript:()"onclick="showPopup();">Sign Up</a></li>
             <li><a href="#story">The Story</a></li>
             <li><a href="#more-info">More Info</a></li>
         </ul>
@@ -43,7 +43,7 @@
             <p>
             Every week we have a <span class="highlight">Party!</span> If you want in on that, then join our club.
             There will be cake and soft drinks! Sometimes we have movie nights and popcorn!</p>
-            <a class="cta" href="#">Sign me up!</a>
+            <a class="cta" href="javascript:()"onclick="showPopup();">Sign me up!</a>
         </div>
     </div>
     <div class="sep"></div>
@@ -70,7 +70,7 @@
             All these three monsters ever wanted to do, was be friendly, have fun, eat cake, throw parties and have movie nights with sleep overs.  
         </p>
         <p>
-            And so this group of friends, consisting of Green, Red and Blue formed their own little club where no one was expected to be scare anyone or be mean to anyone at all.      
+            And so this group of friends, consisting of Green, Red and Blue formed their own little club where no one was expected to be mean to anyone at all.      
         </p>
         <p>
             Their club promoted being silly, hanging out your friends, eating cake and being as nice as you possibly could, to everyone around. <br>
@@ -88,23 +88,37 @@
             Made by <a href="https://github.com/adhSwede/"> Jonas aka adhSwede</a>
         </div>
     </footer>
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="blanket"></div>
             <div class="content">
-                <h2>Fill in your Details</h2>
-                <form action=""></form>
+                <h2>Fill In Your Details</h2>
+                <form action="">
+                <div class="row">
                     <div class="item">
                         <label>Your First Name</label>
                         <input type="text" placeholder="GreenFace" value="Billy">
+                    </div>
+                    <div class="item">
                         <label>Your Last Name</label>
                         <input type="text" placeholder="Monsterson">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
                         <label>Your Favorite Color</label>
                         <input type="text" placeholder="Yellow">
+                    </div>
+                    <div class="item">
                         <label>Your Favorite Food</label>
                         <input type="text" placeholder="Chocolate Cake">
                     </div>
-                <button class="close">X</button>
+                </div>
+                    <a class="cta">Give Me Cake!</a>
+                </form>
+                <button class="close" href="javascript:()"onclick="hidePopup();">Close</button>
             </div>
         </div>
+
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
